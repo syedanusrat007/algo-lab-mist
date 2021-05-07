@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1475075559 source:e:\mist\l-2 t-2\algorithm lab\mchain m\souce code mcm\main.cpp
+	<iostream>
+	<cstdlib>
+	<cstdio>
+

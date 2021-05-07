@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1474992355 source:e:\mist\l-2 t-2\algorithm lab\knapsack\ famous knapsack problem\main.cpp
+	<cstdio>
+	<algorithm>
+

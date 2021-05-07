@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1478114763 source:e:\mist\l-2 t-2\algorithm lab\lcs\prince and princesses\main.cpp
+	<iostream>
+	<cstring>
+	<climits>
+	<cmath>
+	<algorithm>
+

@@ -1,0 +1,76 @@
+//vertex
+#include<bits/stdc++.h>
+#define infinite -9999
+using namespace std;
+typedef vector<int> vi;
+typedef vector<vi> vii;
+vii adj;
+int vis[1100],d[1100];
+void dfs(int u)
+{
+    int i;
+    vis[u]=1;
+    for(i=0;i<adj[u].size();i++)
+    {
+         d[adj[u][i]]=1;
+        if(vis[adj[u][i]]==0)
+        {
+
+            dfs(adj[u][i]);
+        }
+    }
+
+}
+int main()
+{
+    //freopen("280.txt","r",stdin);
+    int i,j,k,l,m,n,a,b,c,aa[1100],count=0,bb[1100];
+      while(1)
+    {cin>>n;
+    if(n==0) break;
+    memset(aa,-1,sizeof(aa));
+    memset(bb,-1,sizeof(bb));
+     adj.clear();
+    adj.assign(n,vi());
+    while(1)
+    {cin>>a;
+    a--;
+    if(a<0)break;
+    while(1)
+    {
+        cin>>b;
+        b--;
+        if(b<0)break;
+        adj[a].push_back(b);
+       // a=b;
+    }
+    }
+    cin>>c;
+    for(i=0;i<c;i++)
+        {cin>>aa[i]; aa[i]--;}
+    for(i=0;i<c;i++)
+    {
+        count=0;
+        for(j=0;j<n;j++)
+        {d[j]=0;vis[j]=0;}
+
+        dfs(aa[i]);
+        for(j=0,l=0;j<n;j++)
+            {
+                //cout<<dis[j]<<endl;
+                if(d[j]==0)
+            {count++;
+            bb[l]=j;l++;
+            }}
+            cout<<count<<" ";
+        for(j=0;j<count;j++)
+        {
+            cout<<bb[j]+1<<" ";
+        }
+        cout<<endl;
+}
+}
+return 0;
+
+}
+

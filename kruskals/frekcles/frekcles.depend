@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1472648088 source:e:\mist\l-2 t-2\algorithm lab\kruskals\frekcles\main.cpp
+	<iostream>
+	<cstring>
+	<string.h>
+	<cmath>
+	<fstream>
+	<cstdlib>
+	<queue>
+
